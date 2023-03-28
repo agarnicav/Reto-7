@@ -21,6 +21,7 @@ Este proceso continúa hasta que el valor de 'i' sea mayor que 100 y, en ese pun
 Nos imprime una lista asi: 
 
 
+
 ![Primer punto lista 1](https://user-images.githubusercontent.com/124607325/228106317-3cae5192-375e-466e-b38b-d1a8bcf989f4.png)
 
 
@@ -121,8 +122,55 @@ Para realizar este programa se hace:
  
  
  # Quinto Punto 
+ 
  Imprimir el factorial de un número natural n dado.
  
- 
- 
+ Para realizar este programa se hace: 
+ ![Quinto punto reto 7](https://user-images.githubusercontent.com/124607325/228114015-a4b88f00-ab0c-4bde-b2fa-22cd5fc7c6db.png)
 
+ 1. Se  solicita igresar número natural, que se almacena en la variable "n".
+ 
+ 2. Se define la función factorial(n), que toma un argumento "n" y devuelve el factorial de ese número.
+ 
+ 3. Se inician las variables "resultado" e "i" en 1, que se utilizarán para almacenar el resultado del cálculo del factorial y para realizar el bucle while.
+ 
+ 4. Se establece la variable "terminado" como False, lo que indica que el bucle while se ejecutará al menos una vez.
+
+5. Se inicia un bucle while que se ejecutará mientras "terminado" sea False. En cada iteración, el valor de "resultado" se multiplica por "i" y "i" se incrementa en 1.
+
+6. Se verifica si "i" es mayor que "n". Si es así, se establece "terminado" como True y el bucle while se detiene.
+
+7. La función devuelve el valor de "resultado".
+
+Y se  imprime un mensaje que indica el factorial del número ingresado: En este caso se hace el ejemplo con el factorial de 20.
+![Quinto punto resultado](https://user-images.githubusercontent.com/124607325/228114396-0086b8b4-a8b5-48cd-bf4b-9d94f6914fb2.png)
+
+
+# Sexto Punto 
+
+Implementar un algoritmo que permita adivinar un número dado de 1 a 100, preguntando en cada caso si el número es mayor, menor o igual.
+
+ Para realizar este programa se hace: 
+ 
+![Sexto punto reto 7](https://user-images.githubusercontent.com/124607325/228116038-920e9613-8f3c-4bca-a8cd-61eaf321b634.png)
+
+1. Se importa el módulo "random" de Python para generar números aleatorios.
+
+2. Se usa la  función "randint()" del módulo "random" para generar un número aleatorio entre 1 y 100. Este número es el que el jugador tendrá que adivinar.
+
+3. El programa imprime en pantalla el mensaje "Adivina un número entre el 1 a 100".
+![Sexto punto reto 7 1](https://user-images.githubusercontent.com/124607325/228116026-1fb719fe-a208-4d44-9495-f6c4cdd0e21a.png)
+
+4. A continuación, comienza un bucle "while True" que se ejecutará hasta que el jugador adivine el número.
+
+5. En cada iteración del bucle, el programa le pide al jugador que ingrese si el número a adivinar es mayor, menor o igual al número que sugiere el programa.
+![Sexto punto reto 7 preguntas ](https://user-images.githubusercontent.com/124607325/228116031-eca6523a-5189-4e6d-9caa-136e2078da75.png)
+Si se ingresa "mayor", el programa genera un nuevo número aleatorio entre el número que sugiere el programa + 1 y 100 
+Si se ingresa "menor", el programa genera un nuevo número aleatorio entre 1 y el número que sugiere el programa - 1 
+Si se ingresa "igual", el programa imprime en pantalla el mensaje "¡Ganaste!" junto con el número que había elegido el programa. Luego, el programa sale del bucle.
+
+6. Si se ingresa cualquier otra cosa, el programa imprime en pantalla el mensaje "Respuesta inválida. Por favor, ingrese 'mayor', 'menor' o 'igual'" y comienza una nueva iteración del bucle.
+
+7. si se adivina el número, el programa imprime en pantalla el mensaje "¡Ganaste!" junto con el número que había elegido el programa y sale del bucle.
+
+![Sexto punto reto respuesta](https://user-images.githubusercontent.com/124607325/228116050-99fbee24-8367-4e86-9fdd-74aa66718b57.png)
