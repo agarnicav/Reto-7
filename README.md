@@ -225,7 +225,7 @@ Implementar el algoritmo que muestre los números primos del 1 al 100. nota: use
 
 ![Octavo punto reto 7 3](https://user-images.githubusercontent.com/124607325/228119285-ec00330e-4d46-4677-9643-c99a07277369.png)
 
-4. n la línea if es_primo se comprueba si el número numero es primo utilizando la función es_primo(numero). Si es primo, se imprime utilizando la función print(numero).
+4. en if es_primo se comprueba si el número numero es primo utilizando la función es_primo(numero). Si es primo, se imprime utilizando la función print(numero).
 
 5. Y se aumenta el valor de numero en 1 para que el siguiente número se compruebe en la siguiente iteración.
 
