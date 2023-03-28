@@ -159,12 +159,17 @@ Implementar un algoritmo que permita adivinar un número dado de 1 a 100, pregun
 2. Se usa la  función "randint()" del módulo "random" para generar un número aleatorio entre 1 y 100. Este número es el que el jugador tendrá que adivinar.
 
 3. El programa imprime en pantalla el mensaje "Adivina un número entre el 1 a 100".
+
+
 ![Sexto punto reto 7 1](https://user-images.githubusercontent.com/124607325/228116026-1fb719fe-a208-4d44-9495-f6c4cdd0e21a.png)
 
 4. A continuación, comienza un bucle "while True" que se ejecutará hasta que el jugador adivine el número.
 
 5. En cada iteración del bucle, el programa le pide al jugador que ingrese si el número a adivinar es mayor, menor o igual al número que sugiere el programa.
+
+
 ![Sexto punto reto 7 preguntas ](https://user-images.githubusercontent.com/124607325/228116031-eca6523a-5189-4e6d-9caa-136e2078da75.png)
+
 Si se ingresa "mayor", el programa genera un nuevo número aleatorio entre el número que sugiere el programa + 1 y 100 
 Si se ingresa "menor", el programa genera un nuevo número aleatorio entre 1 y el número que sugiere el programa - 1 
 Si se ingresa "igual", el programa imprime en pantalla el mensaje "¡Ganaste!" junto con el número que había elegido el programa. Luego, el programa sale del bucle.
@@ -174,3 +179,30 @@ Si se ingresa "igual", el programa imprime en pantalla el mensaje "¡Ganaste!" j
 7. si se adivina el número, el programa imprime en pantalla el mensaje "¡Ganaste!" junto con el número que había elegido el programa y sale del bucle.
 
 ![Sexto punto reto respuesta](https://user-images.githubusercontent.com/124607325/228116050-99fbee24-8367-4e86-9fdd-74aa66718b57.png)
+
+
+# Septimo Punto 
+
+Implementar un programa que ingrese un número de 2 a 50 y muestre sus divisores.
+
+ Para realizar este programa se hace:
+ ![Septimo punto reto 7 ](https://user-images.githubusercontent.com/124607325/228117275-bccd58eb-a4db-4b21-9573-7d7540eec709.png)
+1. Se pide ingresar un numero entre 2 y 50, y se almacena en la variable n.
+
+2. Se inicia otra variable llamda i, que se inicia en 2 que es el primer posible divisor 
+
+3. Se inicia el ciclo while  en que si 2 es  <= n y n es <= 50, esto para que n este en ese rango Si el número n es menor que 2 o mayor que 50, el ciclo no se ejecutará.
+
+4, Se inicia una condición if n % i == 0:  la cual comprobara si el número n es divisible por el número i. Si es así, el número i es un divisor de n y se imprimirá.
+
+5. Para seguir con el bucle se aumenta el valor de i en 1 para que el siguiente número se compruebe.
+
+Cuando se han comprobadoel ciclo termina y el programa finaliza.
+
+En este caso para comprobar se prueba con el numero 30.
+
+![Septimo punto respuesta](https://user-images.githubusercontent.com/124607325/228117273-4121b324-71c5-421c-9021-fa1e28ac1eb4.png)
+
+
+# Octavo Punto 
+
