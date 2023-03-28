@@ -186,7 +186,9 @@ Si se ingresa "igual", el programa imprime en pantalla el mensaje "¡Ganaste!" j
 Implementar un programa que ingrese un número de 2 a 50 y muestre sus divisores.
 
  Para realizar este programa se hace:
+ 
  ![Septimo punto reto 7 ](https://user-images.githubusercontent.com/124607325/228117275-bccd58eb-a4db-4b21-9573-7d7540eec709.png)
+ 
 1. Se pide ingresar un numero entre 2 y 50, y se almacena en la variable n.
 
 2. Se inicia otra variable llamda i, que se inicia en 2 que es el primer posible divisor 
@@ -199,10 +201,36 @@ Implementar un programa que ingrese un número de 2 a 50 y muestre sus divisores
 
 Cuando se han comprobadoel ciclo termina y el programa finaliza.
 
-En este caso para comprobar se prueba con el numero 30.
+En este caso para comprobar se prueba con el numero 35.
 
 ![Septimo punto respuesta](https://user-images.githubusercontent.com/124607325/228117273-4121b324-71c5-421c-9021-fa1e28ac1eb4.png)
 
 
 # Octavo Punto 
 
+Implementar el algoritmo que muestre los números primos del 1 al 100. nota: use funciones
+
+ Para realizar este programa se hace:
+
+![Octavo punto reto 7 1](https://user-images.githubusercontent.com/124607325/228119283-6283641c-16a1-435a-a7f8-ff75d1d2be12.png)
+
+1. Se declara La función es_primo que comprueba si un número es primo. Si el número es menor que 2, devuelve False. Si el número es divisible por cualquier número entre 2 y el número menos uno devuelve False. Si el número no es divisible por ningún número entre 2 y el número menos 1 devuelve True.
+
+![Octavo punto reto 7 2](https://user-images.githubusercontent.com/124607325/228119284-81c30713-0b46-4c65-ac12-81a213952728.png)
+
+
+2. Se declara la función Lista_numeros_primos que crea una lista vacía llamada numeros_primos y encuentra todos los números primos desde n hasta 100 utilizando el ciclo while. Si el número es primo, se agrega a la lista de numeros_primos. Después de encontrar todos los números primos, se devuelve la lista de numeros_primos.
+
+3.  Se define un ciclo while donde se  asegura de que los números del 1 al 100 sean comprobados para ser primos. Si el número es primo, se imprime utilizando la función es_primo(numero).
+
+![Octavo punto reto 7 3](https://user-images.githubusercontent.com/124607325/228119285-ec00330e-4d46-4677-9643-c99a07277369.png)
+
+4. n la línea if es_primo se comprueba si el número numero es primo utilizando la función es_primo(numero). Si es primo, se imprime utilizando la función print(numero).
+
+5. Y se aumenta el valor de numero en 1 para que el siguiente número se compruebe en la siguiente iteración.
+
+6. Cuando se han comprobado todos los números del 1 al 100, el ciclo termina y el programa finaliza.
+
+La lista que se imprime es asi: 
+
+![Octavo punto reto 7  respuesta](https://user-images.githubusercontent.com/124607325/228119282-f49d9e12-bd19-406e-8247-845cc71d48f1.png)
