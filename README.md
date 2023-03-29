@@ -8,6 +8,17 @@ Para hacer este programa se realiza:
 ![Primer punto reto 7](https://user-images.githubusercontent.com/124607325/228106277-e1b1164e-9e4f-42d1-8078-debc50c6eccd.png)
 
 
+     # Inicializa una variable 'i' con el valor 1
+     i = 1
+
+     # Mientras 'i' sea menor o igual a 100, ejecuta el siguiente bloque de código
+     while i <= 100:
+     # Imprime el valor actual de 'i' y su cuadrado
+     print(i, i**2)
+     # Incrementa el valor de 'i' en 1 para la siguiente iteración
+    i  += 1
+
+
 1. se le da un valor inicial a 'i' con el valor 1.
 
 2. Luego, el bucle while se ejecuta siempre que el valor de 'i' sea menor o igual a 100.
@@ -33,6 +44,20 @@ Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente ot
 ## Diagrama de flujo 
 
 ![Segundo punto reto 7](https://user-images.githubusercontent.com/124607325/228106555-bd67fe88-3593-4f79-8cc0-ed06f0fbc218.png)
+
+
+
+    # Inicializa dos variables 'i' y 'j' con los valores 1 y 2, respectivamente
+     i = 1 
+     j = 2 
+
+    # Mientras 'i' sea menor o igual a 999 y 'j' sea menor o igual a 1000, ejecuta el siguiente bloque de código
+    while i <= 999 and j<=1000: 
+    # Imprime los valores actuales de 'i' y 'j', separados por una coma y un espacio
+     print(i, j, sep = ", ")
+    # Incrementa el valor de 'i' y 'j' en 2 para la siguiente iteración
+    i += 2
+
 
 Para hacer este programa se debe: 
 
@@ -63,6 +88,26 @@ Imprimir los números pares en forma descendente hasta 2 que son menores o igual
 
 ##  Diagrama de flujo 
 ![Tercer punto reto 7](https://user-images.githubusercontent.com/124607325/228108626-cfd29180-2719-4fb7-bea9-ada5aa445669.png)
+
+
+
+     # Solicita al usuario que ingrese un número y lo convierte a un entero utilizando la función 'int'
+     n= int(input("Ingrese un número natural mayor o igual a 2: "))
+
+     # Si el número ingresado es mayor o igual a 2, ejecuta el siguiente bloque de código
+     if n >= 2:
+       # Establece el valor de la variable 'i' como 'n' si 'n' es par, o como 'n-1' si 'n' es impar
+       i = n if n % 2 == 0 else n - 1  
+       # Mientras 'i' sea mayor o igual a 2, ejecuta el siguiente bloque de código
+         while i >= 2:
+        # Imprime el valor actual de 'i'
+        print(i)
+        # Resta 2 al valor de 'i' para la siguiente iteración
+        i -= 2
+# Si el número ingresado es menor que 2, imprime el mensaje "El número ingresado es menor que 2."
+else:
+    print("El número ingresado es menor que 2.")
+
 
 Para hacer este programa se debe: 
 
@@ -95,6 +140,33 @@ Se imprime una lista  asi:
 
 En 2022 el país A tendrá una población de 25 millones de habitantes y el país B de 18:9 millones. Las tasas de crecimiento anual de la población serán de 2% y 3% respectivamente. Desarrollar un algoritmo para informar en que año la población del país B superará a la de A.
 
+
+     # Establece las poblaciones iniciales de los países A y B en millones
+     PoblacionA = 25
+     PoblacionB = 18.9
+
+      # Establece las tasas de interés anuales de los países A y B
+      Tasa_paisA = 0.02
+      Tasa_paisB = 0.03
+
+      # Solicita al usuario que ingrese el año de inicio para el cálculo
+      n= int(input("Ingrese el año en el que quiere comenzar: "))
+      Año_actual= n
+
+     # Mientras la población del país B sea menor o igual que la del país A, ejecuta el siguiente bloque de código
+      while PoblacionB <= PoblacionA:
+    
+          # Calcula la nueva población del país A después de un año utilizando su tasa de interés
+            PoblacionA *= (1 + Tasa_paisA)
+          # Calcula la nueva población del país B después de un año utilizando su tasa de interés
+            PoblacionB *= (1 + Tasa_paisB)
+
+       # Incrementa el año actual en 1 para la siguiente iteración
+         Año_actual += 1
+    
+        # Imprime el año en el que la población del país B superará a la del país A
+        print("La población del país B superará a la del país A en el año "+str(Año_actual))
+
 Para realizar este programa se hace: 
 
 ![Cuarto Punto reto 7 1](https://user-images.githubusercontent.com/124607325/228111894-c703cce9-fb47-48d5-8835-cb14fc5a497e.png)
@@ -125,6 +197,26 @@ Para realizar este programa se hace:
  
  Imprimir el factorial de un número natural n dado.
  
+ 
+     # Solicita al usuario que ingrese un número natural
+     n = int(input("Ingrese un número natural: "))
+
+      # Definición de la función para calcular el factorial
+       def factorial(n):
+         resultado = 1 # Inicializa el resultado en 1
+          i = 1 # Inicializa el contador en 1
+         terminado = False # Establece una bandera para controlar el ciclo
+        while not terminado: # Mientras la bandera no sea verdadera
+           resultado *= i # Multiplica el resultado por el valor del contador
+              i += 1 # Incrementa el contador en 1
+              if i > n: # Si el contador supera el valor de n
+             terminado = True # Establece la bandera en verdadero para salir del ciclo
+          return resultado # Retorna el resultado del factorial
+
+     # Imprime el resultado del factorial del número ingresado por el usuario
+      print("El factorial de " + str(n) + " es " + str(factorial(n)))
+
+ 
  Para realizar este programa se hace: 
  ![Quinto punto reto 7](https://user-images.githubusercontent.com/124607325/228114015-a4b88f00-ab0c-4bde-b2fa-22cd5fc7c6db.png)
 
@@ -149,6 +241,36 @@ Y se  imprime un mensaje que indica el factorial del número ingresado: En este 
 # Sexto Punto 
 
 Implementar un algoritmo que permita adivinar un número dado de 1 a 100, preguntando en cada caso si el número es mayor, menor o igual.
+
+
+     # Importa la librería 'random'
+     import random
+
+     # Genera un número aleatorio entre 1 y 100
+     numero_a_adivinar = random.randint(1, 100)
+
+     # Muestra el mensaje al usuario
+     print("Adivina un número entre el 1 a 100")
+ 
+     # Inicia un bucle que se ejecuta hasta que el usuario adivina el número
+     while True:
+       # Solicita al usuario que indique si el número a adivinar es mayor, menor o igual
+        respuesta = input("¿Es el número " + str(numero_a_adivinar) + "? (mayor/menor/igual): ")
+    
+       # Si el usuario indica que el número a adivinar es mayor
+       if respuesta == "mayor":
+         numero_a_adivinar = random.randint(numero_a_adivinar+1, 100) # Genera un número aleatorio mayor al anterior
+       # Si el usuario indica que el número a adivinar es menor
+         elif respuesta == "menor":
+         numero_a_adivinar = random.randint(1, numero_a_adivinar-1) # Genera un número aleatorio menor al anterior
+       # Si el usuario adivina el número
+         elif respuesta == "igual":
+        print("¡Ganaste! el número es " + str(numero_a_adivinar)) # Muestra el mensaje de felicitación
+        break # Sale del bucle 'while'
+       # Si la respuesta no es válida
+         else:
+        print("Respuesta inválida. Por favor, ingrese 'mayor', 'menor' o 'igual'")
+
 
  Para realizar este programa se hace: 
  
@@ -185,6 +307,27 @@ Si se ingresa "igual", el programa imprime en pantalla el mensaje "¡Ganaste!" j
 
 Implementar un programa que ingrese un número de 2 a 50 y muestre sus divisores.
 
+
+
+     # Solicita al usuario que ingrese un número del 2 al 50
+     n = int(input("Ingrese un número del 2 al 50: "))
+
+     # Inicializa el contador en 2
+     i = 2
+
+      # Imprime el mensaje para informar al usuario sobre los divisores del número ingresado
+      print("Los divisores de", n, "son:")
+
+      # Mientras el número ingresado esté dentro del rango del 2 al 50
+         while 2 <= n <= 50:
+       # Si el número es divisible por el valor actual del contador
+         if n % i == 0:
+       # Imprime el valor del contador, que es un divisor del número ingresado
+         print(i)
+    
+       # Incrementa el valor del contador en 1
+       i += 1
+
  Para realizar este programa se hace:
  
  ![Septimo punto reto 7 ](https://user-images.githubusercontent.com/124607325/228117275-bccd58eb-a4db-4b21-9573-7d7540eec709.png)
@@ -209,6 +352,43 @@ En este caso para comprobar se prueba con el numero 35.
 # Octavo Punto 
 
 Implementar el algoritmo que muestre los números primos del 1 al 100. nota: use funciones
+
+     # Define la función 'es_primo' que recibe un número entero como argumento y devuelve 'True' si el número es primo o 'False' en caso contrario
+     def es_primo(numero: int) -> bool:
+     # Si el número es menor que 2, devuelve 'False'
+     if numero < 2:
+     return False
+     i = 2
+     # Mientras 'i' sea menor que el número, ejecuta el siguiente bloque de código
+      while i < numero:
+     # Si el número es divisible entre 'i', devuelve 'False'
+     if numero % i == 0:
+     return False
+      i += 1
+    # Si no se ha encontrado un divisor entre 2 y el número-1, devuelve 'True'
+     return True
+
+     # Define la función 'Lista_numeros_primos' que recibe un número entero como argumento y devuelve una lista con los números primos mayores o iguales que el argumento y menores o iguales que 100
+      def Lista_numeros_primos(n: int) -> list[int]:
+      numeros_primos = []
+       # Mientras el número 'n' sea menor o igual que 100, ejecuta el siguiente bloque de código
+      while n <= 100:
+       # Si 'n' es un número primo, agrega 'n' a la lista 'numeros_primos'
+         if es_primo(n):
+       numeros_primos.append(n)
+       n += 1
+      # Devuelve la lista de números primos
+       return numeros_primos
+      # Establece el valor inicial de 'numero' en 1
+      numero = 1
+
+      # Mientras 'numero' sea menor o igual que 100, ejecuta el siguiente bloque de código
+      while numero <= 100:
+      # Si 'numero' es un número primo, lo imprime
+       if es_primo(numero):
+       print(numero)
+     # Incrementa el valor de 'numero' en 1 para la siguiente iteración
+      numero += 1
 
  Para realizar este programa se hace:
 
