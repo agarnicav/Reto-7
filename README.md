@@ -4,8 +4,7 @@ Imprimir un listado con los números del 1 al 100 cada uno con su respectivo cua
 
 ## Diagrama de flujo 
 ![Primer punto reto 7](https://user-images.githubusercontent.com/124607325/228106161-4fb4d7ed-14bd-465f-a73e-000f25f6636a.png)
-Para hacer este programa se realiza: 
-![Primer punto reto 7](https://user-images.githubusercontent.com/124607325/228106277-e1b1164e-9e4f-42d1-8078-debc50c6eccd.png)
+
 
 
      # Inicializa una variable 'i' con el valor 1
@@ -17,6 +16,13 @@ Para hacer este programa se realiza:
      print(i, i**2)
      # Incrementa el valor de 'i' en 1 para la siguiente iteración
     i  += 1
+    
+    
+    
+ Para hacer este programa se realiza: 
+
+
+![Primer punto reto 7](https://user-images.githubusercontent.com/124607325/228106277-e1b1164e-9e4f-42d1-8078-debc50c6eccd.png)
 
 
 1. se le da un valor inicial a 'i' con el valor 1.
